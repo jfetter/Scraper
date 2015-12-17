@@ -8,6 +8,7 @@ function(err, res, html) {
 
 var $ = cheerio.load(html);
 var titles = [];
+//var gifImages = [];
 
 
 $('.gifs-gif').each(function(i, el) {
@@ -16,7 +17,12 @@ titles.push(captions);
 });
 
 
-console.log(titles)
+// $('figure').each(function(i, el){
+// 	gifImages.push(el);
+// })
+
+//console.log(titles)
+//console.log(gifImages[0].children[4].prev)
 
 
 
